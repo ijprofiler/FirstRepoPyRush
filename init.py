@@ -1,3 +1,4 @@
+import sys
 import platform
 
 print("Operating System:", platform.system())
@@ -9,3 +10,8 @@ print("Processor:", platform.processor())
 print("Architecture:", platform.architecture())
 print("Python Version:", platform.python_version())
 print("Python Compiler:", platform.python_compiler())
+
+# Список загруженных модулей
+print("Загруженные модули:")
+for module in sys.modules:
+    print(module)
